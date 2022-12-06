@@ -269,7 +269,7 @@
     <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
       <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
         
-        <img src="logo.png" style="width:25px; margin-right:5px;"><span class="fs-4" style="color:rgb(105,198,222);">Maxident</span>
+        <img src="img/logo.png" style="width:25px; margin-right:5px;"><span class="fs-4" style="color:rgb(105,198,222);">Maxident</span>
       </a>
 
       <ul class="nav nav-pills">
@@ -288,21 +288,21 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="10000">
-        <img src="3.jpg" class="d-block w-100">
+        <img src="img/3.jpg" class="d-block w-100">
         <div class="carousel-caption d-none d-md-block">
           <h5 >Bienvenido a Maxident</h5>
           <p>Construyendo sonrisas</p>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="2000">
-        <img src="4.jpg" class="d-block w-100">
+        <img src="img/4.jpg" class="d-block w-100">
         <div class="carousel-caption d-none d-md-block">
           <h5>Bienvenido a Maxident</h5>
           <p>Construyendo sonrisas</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="5.jpg" class="d-block w-100">
+        <img src="img/5.jpg" class="d-block w-100">
         <div class="carousel-caption d-none d-md-block">
           <h5>Bienvenido a Maxident</h5>
           <p>Construyendo sonrisas</p>
@@ -324,7 +324,7 @@
   <div class="row row-cols-1 row-cols-md-3 g-4 p-5">
     <div class="col">
       <div class="card">
-        <img src="7.jpg" class="card-img-top" alt="...">
+        <img src="img/7.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Servicios especializados</h5>
           <p class="card-text">ofrecemos la linea más completa de servicios relevante a tu cuidado bucal.
@@ -334,7 +334,7 @@
     </div>
     <div class="col">
       <div class="card">
-        <img src="6.jpg" class="card-img-top" alt="...">
+        <img src="img/6.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Cuidado bucal</h5>
           <p class="card-text">Nuestra oficina combina tecnología de vanguardia con odontología tradicional para que podamos
@@ -344,7 +344,7 @@
     </div>
     <div class="col">
       <div class="card">
-        <img src="8.jpg" class="card-img-top" alt="...">
+        <img src="img/8.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Visita nuestras sucursales</h5>
           <p class="card-text">Nuestros Especialistas altamente calificados brindan atención integral a adultos y adolescentes. Ofrecemos
