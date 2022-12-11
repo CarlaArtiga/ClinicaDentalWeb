@@ -67,35 +67,31 @@ public class ControladorIngreso extends HttpServlet {
             throws ServletException, IOException {
         //processRequest(request, response);
         String accion = request.getParameter("btnIngresar");
+        
+        String Usuario = request.getParameter("usuario");
+        String Clave = request.getParameter("clave");
+        
+        if (accion.equals("Ingresar"))
         try {
-            if (accion.equals("Ingresar")) {
-                try {
-                    String Usuario = request.getParameter("usuario");
-                    String Clave = request.getParameter("clave");
-
-                    Boolean acceso = ci.VerificarUsuario(Usuario, Clave);
-                    if (acceso == true) {
-                        if (ci.getRol() == 1) {
-                            request.getRequestDispatcher("FormularioPrincipal/Principal.jsp").forward(request, response);
-                        }
-                        //request.getRequestDispatcher("FormularioPrincipal/Principal.jsp").forward(request, response);
-                    } else {
-                        if (ci.getRol() == 2) {
-                            //request.getRequestDispatcher("FormularioCitas/Citas.jsp").forward(request, response);
-                            //request.getRequestDispatcher("index.jsp").forward(request, response);
-                        }
-                        request.getRequestDispatcher("index.jsp").forward(request, response);
+            Boolean acceso = ci.VerificarUsuario(Usuario, Clave);
+            if (acceso == true) {
+                if(ci.getRol()==1){
+                    request.getRequestDispatcher("FormularioPrincipal/Principal.jsp").forward(request, response);
+                    
+                }else{
+                    if(ci.getRol()==2){
+                        request.getRequestDispatcher("/FormularioCitaClientes/CitaCliente.jsp").forward(request, response);
+                        //request.getRequestDispatcher("FormularioCitaClientes/CitaCliente.jsp").forward(request, response);
 
                     }
-                    //request.getRequestDispatcher("index.jsp").forward(request, response);
-                } catch (SQLException ex) {
-                    Logger.getLogger(ControladorIngreso.class.getName()).log(Level.SEVERE, null, ex);
+                   request.getRequestDispatcher("/FormularioCitaClientes/CitaCliente.jsp").forward(request, response);
+
                 }
             } else {
                 request.getRequestDispatcher("index.jsp").forward(request, response);
             }
-        } catch (Exception ex) {
-
+        } catch (SQLException ex) {
+            Logger.getLogger(ControladorIngreso.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     /**

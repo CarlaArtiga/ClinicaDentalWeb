@@ -145,7 +145,7 @@
 					<li><a href="../FormularioUsuarios/Usuarios.jsp">Usuarios</a></li>
 				</ul>
 			</li>
-			<li class="active"><a href="../FormularioCitas/Citas.jsp">Citas</a></li>
+			<li class="active"><a href="FormularioCitas/Citas.jsp">Citas</a></li>
 			<li><a href="#">Productos</a></li>
 			<li class="dropdown">
 				<a data-toggle="dropdown" class="dropdown-toggle" href="#">Ticket <b class="caret"></b></a>

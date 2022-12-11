@@ -18,16 +18,26 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author LENOVO
  */
-/*public class Citas {
+public class Citas {
     private String Select_Cita = "select * from citas";
     private String Select_Cliente = "select * from clientes_vw";
     private String Select_Producto = "select * from producto_vw";
     private String Select_Dentista = "select * from Dentista";
     private String Select_Secretario = "select * from secretario_vw";
+     private String Select_Citas = "select * from cita_vw";
 
     public Citas() {
     }
 
+    public String getSelect_Citas() {
+        return Select_Citas;
+    }
+
+    public void setSelect_Citas(String Select_Citas) {
+        this.Select_Citas = Select_Citas;
+    }
+
+    
     public String getSelect_Secretario() {
         return Select_Secretario;
     }
@@ -96,12 +106,42 @@ import javax.swing.table.DefaultTableModel;
         return tabla;
     }
     
+    public ResultSet ListarCita(){
+        ResultSet resultado = null;
+        Conexion conectar = new Conexion();
+        try{
+            Connection c;
+            c = conectar.EstableceConexion();
+            Statement stm = c.createStatement();
+            resultado = stm.executeQuery(this.getSelect_Citas());
+            while(resultado.next()){
+                
+                System.out.print(resultado.getInt("CodCita") + "\t");
+                System.out.print(resultado.getString("Persona") + "\t");
+                System.out.print(resultado.getString("Producto") + "\t");
+                System.out.print(resultado.getString("FechaHora") + "\t");
+                System.out.print(resultado.getString("Descripcion") + "\t");
+                System.out.print(resultado.getString("Dentista") + "\t");
+                System.out.print(resultado.getString("Secretario") + "\t");
+                System.out.print(resultado.getString("Estado") + "\t");
+                
+            }
+            
+        }catch(SQLException ex){
+            Logger.getLogger(Citas.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return resultado;
+    }
+    
     public int AgendarCita(String per, String prod, String FechaHora, 
                            String desc,String dent,String sec ,String Estado) throws SQLException{
+        this.ListarCita();
         Conexion c = new Conexion();
         c.EstableceConexion();
         return c.ComandoSQL("call insert_cita('"+per+"','"+prod+"','"+FechaHora+"','"+desc+"','"+dent+"','"+sec+"','"+Estado+"');");
     }
+    
+    
     
     public int EditarCita(int cod, String per, String prod, String FechaHora,
                           String desc,String dent,String sec,String Estado) throws SQLException {
@@ -112,6 +152,7 @@ import javax.swing.table.DefaultTableModel;
         
     }
     
+    //Select_Cliente
     public int EliminarCita(int cod) throws SQLException{
         Conexion c = new Conexion();
         c.EstableceConexion();
@@ -125,4 +166,4 @@ import javax.swing.table.DefaultTableModel;
         
     }
     ;
-}*/
+}
