@@ -1,8 +1,10 @@
 sv\edu\ujmd\clinicadentalweb\controladores\ControladorRegistro.class
+sv\edu\ujmd\clinicadentalweb\modelo\Personas.class
 sv\edu\ujmd\clinicadentalweb\controladores\ControladorCitas.class
 sv\edu\ujmd\clinicadentalweb\modelo\ClaseRegistro.class
 sv\edu\ujmd\clinicadentalweb\controladores\ControladorCitaCliente.class
 sv\edu\ujmd\clinicadentalweb\utl\Conexion.class
+sv\edu\ujmd\clinicadentalweb\controladores\ControladorPersona.class
 sv\edu\ujmd\clinicadentalweb\modelo\Citas.class
 sv\edu\ujmd\clinicadentalweb\controladores\ControladorIngreso.class
 sv\edu\ujmd\clinicadentalweb\modelo\ClaseIngreso.class

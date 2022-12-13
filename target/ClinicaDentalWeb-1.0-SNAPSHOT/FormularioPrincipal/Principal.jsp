@@ -141,8 +141,8 @@
 			<li class="dropdown">
 				<a data-toggle="dropdown" class="dropdown-toggle" href="#">Personas <b class="caret"></b></a>
 				<ul class="dropdown-menu">					
-					<li><a href="../FormularioPersonas/Personas.jsp">Personas</a></li>
-					<li><a href="../FormularioUsuarios/Usuarios.jsp">Usuarios</a></li>
+					<li><a href="FormularioPersonas/Personas.jsp">Personas</a></li>
+					<li><a href="FormularioUsuarios/Usuarios.jsp">Usuarios</a></li>
 				</ul>
 			</li>
 			<li class="active"><a href="FormularioCitas/Citas.jsp">Citas</a></li>
@@ -151,7 +151,7 @@
 				<a data-toggle="dropdown" class="dropdown-toggle" href="#">Ticket <b class="caret"></b></a>
 				<ul class="dropdown-menu">					
 					<li><a href="#">Factura</a></li>
-					<li><a href="../FormularioTicket/Ticket.jsp">Imprimir ticket</a></li>
+					<li><a href="FormularioTicket/Ticket.jsp">Imprimir ticket</a></li>
 				</ul>
 			</li>
 		</ul>

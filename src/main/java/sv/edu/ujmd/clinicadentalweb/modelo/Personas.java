@@ -19,7 +19,7 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author LENOVO
  */
-/*public class Personas {
+public class Personas {
     private String Select_Cargos = "select * from cargos";
     private String Select_PersonaVw = "select * from personas_vw;";
     private int Cargo;
@@ -169,4 +169,4 @@ import javax.swing.table.DefaultTableModel;
     }
 
   
-}*/
+}
